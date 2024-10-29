@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: system-ui;
+    color: #fff;
+}
+
+*::selection{
+    color: black;
+    background-color: var(--color1) ;
+}
+
+:root{
+    --color1 : #c13434;
+}
+
+body{
+    height: 100vh;
+    background-color: black
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color1);
+    padding: 15px;
+}
+
+header .logo{
+    margin-left: 100px;
+}
+
+header a h1{
+    color: var(--color1);
+    text-transform: capitalize;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+.menu{
+    display: none;
+}
+
+header .links{
+    padding-right: 50px;
+}
+
+header .links a{
+    display: inline-block;
+    color: #fff;
+    margin: 0px 30px;
+    padding: 2px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+header .links a:hover,
+header .links .active{
+    color: var(--color1);
+    border-bottom: var(--color1) 2px solid;
+}
+
+.container{
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container .content .text{
+    flex-basis: 55%;
+    padding: 0px 150px;
+}
+
+.container .content .text h1{
+    text-transform: capitalize;
+    font-size: 5em;
+}
+
+.container .content .text h2{
+    text-transform: capitalize;
+    font-size: 3em;
+}
+
+span{
+    color: var(--color1);
+}
+
+.container .content .text p{
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container .content .photo img{
+    border-radius: 50%;
+    border: var(--color1) 4px solid;
+}
+
+.container .content .social-media{
+    padding: 10px 0px;
+}
+
+.container .content .social-media a{
+    display: inline-block;
+    color: var(--color1);
+    font-size: 2em;
+    padding: 0px 10px;
+}
+
+.container .content .social-media a:hover{
+    opacity: 0.7;
+}
+
+.container .content .hire-me a{
+    display: inline-block;
+    border: var(--color1) solid 2px;
+    border-radius: 60px;
+    color: var(--color1);
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 10px 50px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.container .content .hire-me a:hover{
+    background-color: var(--color1);
+    color: black;
+}
+
+
+
+
+/* ============================== Media-Time ================================= */
+
+
+
+
+@media (min-width: 1014px) and (max-width: 1360px){
+    .container .content .text h1{
+        font-size: 3em;
+    }
+    .container .content .text h2{
+        font-size: 2em;
+    }
+    .container .content .text{
+        padding: 0px 30px;
+    }
+}
+
+@media (min-width: 878px) and (max-width: 1013px){
+    .container .content .text h1{
+        font-size: 3em;
+    }
+    .container .content .text h2{
+        font-size: 2em;
+    }
+    .container .content .text{
+        padding: 0px 30px;
+    }
+    header .links{
+        padding-right: 50px;
+    }
+    
+    header .links a{
+        margin: 0px 10px;
+        padding: 2px 0;
+    }
+}
+
+@media (min-width: 774px) and (max-width: 878px){
+    .container .content .text h1{
+        font-size: 2em;
+    }
+    .container .content .text h2{
+        font-size: 1.5em;
+    }
+    .container .content .text{
+        padding: 0px 30px;
+    }
+    
+    header .links a{
+        margin: 0px 10px;
+        padding: 2px 0;
+    }
+
+    header .links{
+        padding-right: 40px;
+    }
+    
+    header .logo{
+        margin-left: 50px;
+    }
+
+    .container .content .social-media a{
+        font-size: 2em;
+        padding: 0px 8px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 873px){
+    .container .content{
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container .content .text h1{
+        font-size: 3em;
+    }
+    .container .content .text h2{
+        font-size: 2em;
+    }
+    .container .content .text{
+        padding: 0px 30px;
+    }
+    
+    header .links a{
+        margin: 0px 10px;
+        padding: 2px 0;
+    }
+
+    header .links{
+        padding-right: 20px;
+    }
+    
+    header .logo{
+        margin-left: 40px;
+    }
+
+    .container .content .social-media a{
+        font-size: 2em;
+        padding: 0px 8px;
+    }
+
+    .container .content .hire-me{
+        margin-top: 10px;
+    }
+
+    .container .content .text p{
+        text-align: center;
+    }
+
+    .container .content .photo img{
+        border-radius: 50%;
+        border: var(--color1) 3px solid;
+        height: 270px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 699px){
+    .container{
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .content{
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container .content .text h1{
+        font-size: 2em;
+    }
+    .container .content .text h2{
+        font-size: 1.25em;
+    }
+    .container .content .text{
+        padding: 0px 30px;
+    }
+
+    header{
+        border-bottom: 2px solid var(--color1);
+        padding: 5px;
+    }
+
+    header .links{
+        display: none;
+    }
+    
+    header .logo{
+        margin: auto;
+    }
+
+    .container .content .social-media a{
+        padding: 0px 8px;
+    }
+
+    .container .content .hire-me{
+        margin-top: 10px;
+    }
+
+    .container .content .text p{
+        text-align: center;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        border-bottom: var(--color1) 2px solid;
+    }
+
+    .menu i{
+        color: #ffffff;
+        font-size: 1.5em;
+        margin: 5px 10px;
+        transition: 0.3s;
+    }
+
+    .menu i:hover{
+        color: var(--color1);
+    }
+
+    .container .content .photo img{
+        border-radius: 50%;
+        border: var(--color1) 3px solid;
+        height: 250px;
+    }
+}
+
